@@ -3,13 +3,13 @@ package com.realizationtime.javapuzzlers.p02;
 import org.testng.annotations.Test;
 
 import static com.realizationtime.javapuzzlers.p02.ChangeSolution.change;
-import static org.testng.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ChangeSolutionTest {
 
   @Test
   public void changeIsCorrect() throws Exception {
-    assertEquals("" + change(), "0.90");
+    assertThat("" + change()).isEqualTo("0.90");
   }
 
 }

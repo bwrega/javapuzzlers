@@ -3,13 +3,13 @@ package com.realizationtime.javapuzzlers.p03;
 import org.testng.annotations.Test;
 
 import static com.realizationtime.javapuzzlers.p03.LongDivision.longDivide;
-import static org.testng.Assert.assertTrue;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class LongDivisionTest {
 
   @Test
   public void divisionOverflows() throws Exception {
-    assertTrue(longDivide() < 100L);
+    assertThat(longDivide() < 100L);
   }
 
 }

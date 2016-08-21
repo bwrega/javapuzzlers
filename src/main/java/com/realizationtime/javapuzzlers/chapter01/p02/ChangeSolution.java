@@ -1,4 +1,4 @@
-package com.realizationtime.javapuzzlers.p02;
+package com.realizationtime.javapuzzlers.chapter01.p02;
 
 import java.math.BigDecimal;
 

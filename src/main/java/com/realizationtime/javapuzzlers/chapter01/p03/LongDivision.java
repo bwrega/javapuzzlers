@@ -1,4 +1,4 @@
-package com.realizationtime.javapuzzlers.p03;
+package com.realizationtime.javapuzzlers.chapter01.p03;
 
 public class LongDivision {
 

@@ -1,9 +1,9 @@
-package com.realizationtime.javapuzzlers.p01;
+package com.realizationtime.javapuzzlers.chapter01.p01;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static com.realizationtime.javapuzzlers.p01.OdditySolution.isOdd;
+import static com.realizationtime.javapuzzlers.chapter01.p01.OdditySolution.isOdd;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class OdditySolutionTest {

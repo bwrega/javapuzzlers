@@ -1,4 +1,4 @@
-package com.realizationtime.javapuzzlers.p01;
+package com.realizationtime.javapuzzlers.chapter01.p01;
 
 public class Oddity {
 

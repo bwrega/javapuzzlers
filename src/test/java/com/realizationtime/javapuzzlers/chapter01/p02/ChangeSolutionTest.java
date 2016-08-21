@@ -1,8 +1,8 @@
-package com.realizationtime.javapuzzlers.p02;
+package com.realizationtime.javapuzzlers.chapter01.p02;
 
 import org.testng.annotations.Test;
 
-import static com.realizationtime.javapuzzlers.p02.ChangeSolution.change;
+import static com.realizationtime.javapuzzlers.chapter01.p02.ChangeSolution.change;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ChangeSolutionTest {

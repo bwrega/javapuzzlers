@@ -9,24 +9,34 @@ import static org.testng.Assert.assertTrue;
 
 public class OddityTest {
 
-  @Test(dataProvider = "odds", enabled = false)
-  public void oddsAreHandledCorrectly(int n) throws Exception {
-    assertTrue(isOdd(n), n + " should be odd, but it isn't");
+  @DataProvider(name = "positiveOdds")
+  public static Object[][] positiveOdds() {
+    return new Object[][]{{1}, {145}};
   }
 
-  @Test(dataProvider = "evens")
-  public void evensAreHandledCorrectly(int n) throws Exception {
-    assertFalse(isOdd(n), n + " should not be odd, but it is");
-  }
-
-  @DataProvider(name = "odds")
-  public static Object[][] odds() {
-    return new Object[][]{{1}, {145}, {-1}, {-3}};
+  @DataProvider(name = "negativeOdds")
+  public static Object[][] negativeOdds() {
+    return new Object[][]{{-1}, {-45}};
   }
 
   @DataProvider(name = "evens")
   public static Object[][] evens() {
     return new Object[][]{{0}, {2}, {146}, {-6}};
+  }
+
+  @Test(dataProvider = "positiveOdds")
+  public void positiveOddsAreHandledCorrectly(int n) throws Exception {
+    assertTrue(isOdd(n));
+  }
+
+  @Test(dataProvider = "negativeOdds")
+  public void negativeOddsAreHandledWrong(int n) throws Exception {
+    assertFalse(isOdd(n));
+  }
+
+  @Test(dataProvider = "evens")
+  public void evensAreHandledCorrectly(int n) throws Exception {
+    assertFalse(isOdd(n));
   }
 
 }

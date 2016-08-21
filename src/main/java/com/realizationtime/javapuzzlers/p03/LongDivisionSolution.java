@@ -1,4 +1,3 @@
-
 package com.realizationtime.javapuzzlers.p03;
 
 public class LongDivisionSolution {

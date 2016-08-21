@@ -3,13 +3,15 @@ package com.realizationtime.javapuzzlers.p02;
 import org.testng.annotations.Test;
 
 import static com.realizationtime.javapuzzlers.p02.Change.change;
-import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class ChangeTest {
 
-  @Test(enabled = false)
-  public void changeIsCorrect() throws Exception {
-    assertEquals("" + change(), "0.9");
+  @Test
+  public void doubleHoldsDecimalFractionsIncorrectly() throws Exception {
+    String changeStr = "" + change();
+    assertTrue(changeStr.length() > 4);
+    assertTrue(changeStr.startsWith("0.8999"));
   }
 
 }
